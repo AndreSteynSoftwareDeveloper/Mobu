@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f99c0db1-4b7d-4b88-b74b-5d64cc3d326c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://127.0.0.1/MobuWcf/MobuWs.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="MobuWs1.wsdl" MetadataType="Wsdl" ID="d7b84727-0453-47d5-a80a-930474b83206" SourceId="1" SourceUrl="http://127.0.0.1/MobuWcf/MobuWs.svc?wsdl" />
+    <MetadataFile FileName="MobuWs4.xsd" MetadataType="Schema" ID="eae48e05-19f6-4321-9ec3-38edaa1053c1" SourceId="1" SourceUrl="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd1" />
+    <MetadataFile FileName="MobuWs1.disco" MetadataType="Disco" ID="6adce7ef-e741-4f37-ac62-149211752401" SourceId="1" SourceUrl="http://127.0.0.1/MobuWcf/MobuWs.svc?disco" />
+    <MetadataFile FileName="MobuWs41.xsd" MetadataType="Schema" ID="42bc4dd5-1213-4193-93d0-5513bd929ecc" SourceId="1" SourceUrl="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd0" />
+    <MetadataFile FileName="MobuWs42.xsd" MetadataType="Schema" ID="a09ba1b1-db03-428b-b036-5d5c9da50f37" SourceId="1" SourceUrl="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd3" />
+    <MetadataFile FileName="MobuWs43.xsd" MetadataType="Schema" ID="a63189b1-305f-4df0-adfe-89d3174662d0" SourceId="1" SourceUrl="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

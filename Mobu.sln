@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobuWcf", "MobuWcf\MobuWcf.csproj", "{F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobuUpload", "MobuUpload\MobuUpload.csproj", "{83A1A521-531A-4F4E-9541-152FA5330303}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3} = {F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobuAndroid", "MobuAndroid\MobuAndroid.csproj", "{48378299-6B41-45B0-B476-2A9C079E154A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5C58E9F-DF32-45CF-A1CD-1F51F33CFAA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83A1A521-531A-4F4E-9541-152FA5330303}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83A1A521-531A-4F4E-9541-152FA5330303}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83A1A521-531A-4F4E-9541-152FA5330303}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83A1A521-531A-4F4E-9541-152FA5330303}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48378299-6B41-45B0-B476-2A9C079E154A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48378299-6B41-45B0-B476-2A9C079E154A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48378299-6B41-45B0-B476-2A9C079E154A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{48378299-6B41-45B0-B476-2A9C079E154A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48378299-6B41-45B0-B476-2A9C079E154A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48378299-6B41-45B0-B476-2A9C079E154A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {72E512F9-29CE-4CC6-B7DC-3D7BEFDD14A4}
+	EndGlobalSection
+EndGlobal

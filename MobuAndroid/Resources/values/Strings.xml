@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Mobu</string>
+  <color name="MainBackgroundColor">#333333</color>
+  <color name="ContainerBackgroundColor">#1a1a1a</color>
+  <color name="ContainerBackgroundColorRed">#b30000</color>
+  <color name="ContainerBackgroundColorYellow">#e6e600</color>
+  <color name="ContainerBorderColor">#808080</color>
+  <color name="ButtonBackgroundColor">#a6a6a6</color>
+  <color name="ButtonTextColor">#ffffff</color>
+</resources>

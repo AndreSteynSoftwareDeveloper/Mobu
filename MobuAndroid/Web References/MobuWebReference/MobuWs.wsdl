@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="MobuWs" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/MobuWcf" />
+      <xsd:import schemaLocation="http://127.0.0.1/MobuWcf/MobuWs.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/MobuWcf.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IMobuWs_TestWebService_InputMessage">
+    <wsdl:part name="parameters" element="tns:TestWebService" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_TestWebService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TestWebServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_StartUpload_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartUpload" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_StartUpload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_UploadNextFragment_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadNextFragment" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_UploadNextFragment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadNextFragmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CheckForActiveUploads_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckForActiveUploads" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CheckForActiveUploads_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckForActiveUploadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CancelUpload_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelUpload" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CancelUpload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_FinishUpload_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinishUpload" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_FinishUpload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinishUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_TogglePackageCriticalState_InputMessage">
+    <wsdl:part name="parameters" element="tns:TogglePackageCriticalState" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_TogglePackageCriticalState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TogglePackageCriticalStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CheckForActiveDownloads_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckForActiveDownloads" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CheckForActiveDownloads_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckForActiveDownloadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CancelActiveDownloads_InputMessage">
+    <wsdl:part name="parameters" element="tns:CancelActiveDownloads" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_CancelActiveDownloads_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CancelActiveDownloadsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_StartDownload_InputMessage">
+    <wsdl:part name="parameters" element="tns:StartDownload" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_StartDownload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:StartDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_GetNextFragment_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextFragment" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_GetNextFragment_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNextFragmentResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_FinishDownload_InputMessage">
+    <wsdl:part name="parameters" element="tns:FinishDownload" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_FinishDownload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FinishDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_GetPackageList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageList" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_GetPackageList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPackageListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_RemovePackage_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePackage" />
+  </wsdl:message>
+  <wsdl:message name="IMobuWs_RemovePackage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemovePackageResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IMobuWs">
+    <wsdl:operation name="TestWebService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/TestWebService" message="tns:IMobuWs_TestWebService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/TestWebServiceResponse" message="tns:IMobuWs_TestWebService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartUpload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/StartUpload" message="tns:IMobuWs_StartUpload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/StartUploadResponse" message="tns:IMobuWs_StartUpload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadNextFragment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/UploadNextFragment" message="tns:IMobuWs_UploadNextFragment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/UploadNextFragmentResponse" message="tns:IMobuWs_UploadNextFragment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckForActiveUploads">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/CheckForActiveUploads" message="tns:IMobuWs_CheckForActiveUploads_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/CheckForActiveUploadsResponse" message="tns:IMobuWs_CheckForActiveUploads_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelUpload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/CancelUpload" message="tns:IMobuWs_CancelUpload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/CancelUploadResponse" message="tns:IMobuWs_CancelUpload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinishUpload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/FinishUpload" message="tns:IMobuWs_FinishUpload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/FinishUploadResponse" message="tns:IMobuWs_FinishUpload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TogglePackageCriticalState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/TogglePackageCriticalState" message="tns:IMobuWs_TogglePackageCriticalState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/TogglePackageCriticalStateResponse" message="tns:IMobuWs_TogglePackageCriticalState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckForActiveDownloads">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/CheckForActiveDownloads" message="tns:IMobuWs_CheckForActiveDownloads_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/CheckForActiveDownloadsResponse" message="tns:IMobuWs_CheckForActiveDownloads_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CancelActiveDownloads">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/CancelActiveDownloads" message="tns:IMobuWs_CancelActiveDownloads_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/CancelActiveDownloadsResponse" message="tns:IMobuWs_CancelActiveDownloads_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="StartDownload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/StartDownload" message="tns:IMobuWs_StartDownload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/StartDownloadResponse" message="tns:IMobuWs_StartDownload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNextFragment">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/GetNextFragment" message="tns:IMobuWs_GetNextFragment_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/GetNextFragmentResponse" message="tns:IMobuWs_GetNextFragment_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FinishDownload">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/FinishDownload" message="tns:IMobuWs_FinishDownload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/FinishDownloadResponse" message="tns:IMobuWs_FinishDownload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPackageList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/GetPackageList" message="tns:IMobuWs_GetPackageList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/GetPackageListResponse" message="tns:IMobuWs_GetPackageList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemovePackage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IMobuWs/RemovePackage" message="tns:IMobuWs_RemovePackage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IMobuWs/RemovePackageResponse" message="tns:IMobuWs_RemovePackage_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IMobuWs" type="tns:IMobuWs">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="TestWebService">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/TestWebService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartUpload">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/StartUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadNextFragment">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/UploadNextFragment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckForActiveUploads">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/CheckForActiveUploads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelUpload">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/CancelUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinishUpload">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/FinishUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TogglePackageCriticalState">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/TogglePackageCriticalState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckForActiveDownloads">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/CheckForActiveDownloads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CancelActiveDownloads">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/CancelActiveDownloads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="StartDownload">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/StartDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNextFragment">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/GetNextFragment" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FinishDownload">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/FinishDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPackageList">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/GetPackageList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RemovePackage">
+      <soap:operation soapAction="http://tempuri.org/IMobuWs/RemovePackage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MobuWs">
+    <wsdl:port name="BasicHttpBinding_IMobuWs" binding="tns:BasicHttpBinding_IMobuWs">
+      <soap:address location="http://127.0.0.1/MobuWcf/MobuWs.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

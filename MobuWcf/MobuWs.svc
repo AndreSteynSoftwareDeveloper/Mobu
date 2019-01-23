@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="MobuWcf.MobuWs" CodeBehind="MobuWs.svc.cs" %>
